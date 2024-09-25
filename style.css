@@ -60,10 +60,15 @@ header {
   margin: 0 auto;
 }
 
+
 .panel {
   background-color: rgb(91, 120, 118);
   padding: 16px;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
+}
+.panel.translation {
+  border-radius:0 0 16px 16px ;
+
 }
 .panel img {
   width: 30px;
