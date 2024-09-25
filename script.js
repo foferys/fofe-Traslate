@@ -32,7 +32,7 @@ async function translate(text,langPartenza, lang, flag) {
   console.log(result);
 
   translationText.innerText = result;
-  translationFlag.innerText = flag;
+  translationFlag.innerText = flag + lang;
 }
 
 function cambiaColore(colore) {
@@ -66,7 +66,7 @@ langButtons.forEach(function(langButton) {
     console.log(lang)
     switch(lang) {
       case "en":
-        cambiaColore("red");
+        cambiaColore("#8aa76e");
         break;
     } 
   });
